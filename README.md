@@ -1,3 +1,22 @@
+# EmojiChat-FrontEnd
+Persistent chat application that adds emojies based on the content of the text message, using deep learning.
+
+To see a chat demo, checkout https://github.com/NyleD/EmojiChat-Backend
+
+#### How does it work?
+Using the Websocket API, it connects to an API endpoint and opens a two-way communication session between the browser and server. Checkout how the API works  https://github.com/NyleD/EmojiChat-Backend/blob/master/chat/routing.py .  
+
+After a connection, there are four event listeners onopen, onmessage, onerror and onclose that handle all the responses from the server. 
+
+On every connection, a username is send to the server, and messages are fetched for the user.
+
+After the intial user connection, there are two callbacks set up, addMessage for adding new messages and setMessages for fetching other messages. 
+
+#### Technologies:
+- React.js
+- Websocket API
+
+_______________________________________________________________________________________________
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
