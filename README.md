@@ -4,7 +4,7 @@ Persistent chat application that adds emojies based on the content of the text m
 To see a chat demo, checkout https://github.com/NyleD/EmojiChat-Backend
 
 #### How does it work?
-Using the Websocket API, it connects to an API endpoint and opens a two-way communication session between the browser and server. Checkout how the API works  https://github.com/NyleD/EmojiChat-Backend/blob/master/chat/routing.py .  
+Using the Websocket API, it connects to an API endpoint and opens a two-way communication session between the browser and server. Checkout how the API works  https://github.com/NyleD/EmojiChat-Backend/blob/master/chat/consumer.py .  
 
 After a connection, there are four event listeners onopen, onmessage, onerror and onclose that handle all the responses from the server. 
 
